@@ -1,0 +1,40 @@
+body {
+    background-color: beige;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+.container {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+   }
+   
+input[type="text"],
+input[type="number"] {
+    max-width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: brown;
+    color: rgb(192, 171, 171);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(241, 63, 63);
+    color: rgb(213, 232, 248);
+}
