@@ -80,8 +80,22 @@ console.log(add(10,5)) */
     console.log(`${i}`)
 } */
 
-let nombre = "angel"
+/*let nombre = "angel"
 
 let adds = nombre.split().reverse().join(" ")
 
-console.log(adds)  
+console.log(adds)  */
+
+const express = require('express'); // Usa comillas simples o dobles para importar
+const port = 9000; // Define el puerto
+const app = express(); // Crea la instancia de la aplicación
+
+// Define una ruta para manejar solicitudes GET al inicio "/"
+app.get('/', (req, res) => {
+    res.send('¡Servidor funcionando!'); // Responde al cliente con este mensaje
+});
+
+// Inicia el servidor en el puerto definido
+app.listen(port, () => {
+    console.log(`Servidor iniciado en http://localhost:${port}`);
+});
